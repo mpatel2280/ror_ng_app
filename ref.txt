@@ -1,0 +1,52 @@
+https://www.youtube.com/watch?v=_oi8vgGORCQ
+
+
+https://guides.rubyonrails.org/getting_started.html
+
+
+rails new ror_api --api 
+
+cd ror_api
+
+bin/rails generate model Article title:string body:text author:string 
+
+bin/rails generate controller api/v1/Articles index --skip-routes
+
+bin/rails db:migrate
+
+bin/rails console
+
+article = Article.new(title: "Hello Rails", body: "I am on Rails!", author: "author 1")
+
+article.save
+
+bin/rails server
+
+http://localhost:3000/api/v1/articles
+
+https://v15.angular.io/guide/setup-local
+https://v15.angular.io/guide/build
+
+npx @angular/cli@15 new np_app15
+
+cd np_app15
+
+ng serve --open 
+
+http://localhost:4200
+
+ng g c listarticles
+
+ng g c createarticle
+
+ng g c editarticle
+
+ng g s services/article
+
+-- create
+ng_app15/src/proxy.conf.json
+
+-- update
+ng_app15/angular.json
+ror_api/config/initializers/cors.rb (39min)
+
