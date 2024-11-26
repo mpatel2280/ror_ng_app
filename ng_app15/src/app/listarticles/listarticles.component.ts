@@ -8,7 +8,7 @@ import { ArticleService } from '../services/article.service';
 })
 export class ListarticlesComponent {
 
-  articles: any;
+  articles:any;
 
   constructor(private articleService: ArticleService) {
 
