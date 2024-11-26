@@ -1,1 +1,17 @@
-<p>listarticles works!</p>
+<h1>List Articles</h1>
+<table class="table">
+    <thead>
+      <tr>
+        <th scope="col">Title</th>
+        <th scope="col">Body</th>
+        <th scope="col">Author</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let article of articles">
+        <td>{{ article.title }}</td>
+        <td>{{ article.body }}</td>
+        <td>{{ article.author }}</td>
+      </tr>     
+    </tbody>
+  </table>

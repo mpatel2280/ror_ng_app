@@ -50,3 +50,6 @@ ng_app15/src/proxy.conf.json
 ng_app15/angular.json
 ror_api/config/initializers/cors.rb (39min)
 
+https://getbootstrap.com/
+
+npm install bootstrap --save
