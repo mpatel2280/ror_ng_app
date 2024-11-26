@@ -20,16 +20,15 @@ export class ArticleService {
   }
 
   addArticle(data:any) {
-    console.log('addArticle====>', data)
     return this.http.post(this.url+'/api/v1/articles', data, this.httpOptions);
   }
 
-  findArticle() {
-    
+  findArticle(id:any) {
+    return this.http.get(this.url+'/api/v1/articles/'+id);
   }
 
-  updateArticle() {
-    
+  updateArticle(data:any, id:any) {
+    return this.http.put(this.url+'/api/v1/articles/'+ id, data, this.httpOptions);
   }
 
   deleteArticle(id:any) {
